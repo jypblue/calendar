@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>calendar</title>
-    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="stylesheet" href="css/global.css" />
     <script src="js/skyseas_calendar.js"></script>
 </head>
+
 <body>
-        <input type="text" id="date1" value="click me"/>
-        <div id="date2" >click me</div>
-        <script>
-
-
-
-               
-
-
-
-                new Skyseas_calendar({
-                    id:"date2",
-                    numMonths:1,
-                    date:{total:3,rows:[{time:"2014-9-7",vId:"2"},
-                        {time:"2014-8-17",vId:"3"},{time:"2014-8-27",vId:"4"}]}
-                });
-                 new Skyseas_calendar({
-                    id:"date1",
-                    numMonths:2,
-                    date:{total:3,rows:[{time:"2014-9-7",vId:"2"},
-                        {time:"2014-8-17",vId:"3"},{time:"2014-8-27",vId:"4"}]}
-                });
-
-
-
-
-        </script>
+    <input type="text" id="date1" value="click me" />
+    <div id="date2">click me</div>
+    <script>
+        new Skyseas_calendar({
+            id: "date2",
+            numMonths: 1,
+            date: {
+                total: 3,
+                rows: [{
+                    time: "2014-9-7",
+                    vId: "2"
+                }, {
+                    time: "2014-8-17",
+                    vId: "3"
+                }, {
+                    time: "2014-8-27",
+                    vId: "4"
+                }]
+            }
+        });
+        new Skyseas_calendar({
+            id: "date1",
+            numMonths: 2,
+            date: {
+                total: 3,
+                rows: [{
+                    time: "2014-9-7",
+                    vId: "2"
+                }, {
+                    time: "2014-8-17",
+                    vId: "3"
+                }, {
+                    time: "2014-8-27",
+                    vId: "4"
+                }]
+            }
+        });
+    </script>
 </body>
+
 </html>

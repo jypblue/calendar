@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/calendar.css" rel="stylesheet">
+<script type="text/javascript" src="calendar.js"></script>
+</head>
+<body>
+  <input type="text" class="date" name="">
+  <input type="text" class="date2" name="">
+
+  <script type="text/javascript">
+
+    var c = new Calendar({
+      el:'.date',
+      monthNums:2,
+      data: [{
+          time: "2016-9-7",
+          vId: "2"
+      }, {
+          time: "2016-8-17",
+          vId: "3"
+      }, {
+          time: "2016-8-27",
+          vId: "4"
+      }]
+    });
+    //c.show();
+
+    var t = new Calendar({
+      el:'.date2',
+      monthNums:1,
+      data: [{
+          time: "2016-9-7",
+          vId: "2"
+      }, {
+          time: "2016-8-17",
+          vId: "3"
+      }, {
+          time: "2016-8-27",
+          vId: "4"
+      }]
+    });
+   // t.show();
+
+
+  </script>
+</body>
+</html>

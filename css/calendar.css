@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+/**
+ *
+ * @authors zx.wang (zx.wang1991@gmail.com)
+ * @date    2016-10-28 15:14:06
+ * @version $Id$
+ */
+.group {
+  width: 379px;
+  float: left;
+}
+.leftDate {
+}
+.rightDate {
+  float: left;
+}
+.today {
+  background-color: red;
+}
+html {
+  overflow-y: scroll;
+  background-color: #F0F0F0
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, figure {
+  padding: 0;
+  margin: 0
+}
+body {
+  font: 14px/1.5 "Microsoft YaHei", Helvetica, Tahoma, simsun, sans-serif;
+  color: #333;
+  background-color: #F1F3F6
+}
+abbr, article, aside, bb, datagrid, datalist, details, dialog, event-source, figure, figcaption, footer, header, mark, menu, meter, nav, output, progress, section, time {
+  display: block;
+  height: auto
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+ol, ul {
+  list-style: none outside
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%
+}
+fieldset, img {
+  border: 0 none;
+  vertical-align: middle
+}
+a {
+  color: #333;
+  text-decoration: none
+}
+a:hover {
+  color: #000;
+  text-decoration: underline
+}
+em {
+  font-style: normal
+}
+textarea {
+  overflow-y: auto
+}
+input, select, textarea, button {
+  font: 14px "Microsoft YaHei", Tahoma, Helvetica, simsun, sans-serif
+}
+button {
+  overflow: visible;
+  vertical-align: middle
+}
+button, label {
+  cursor: pointer
+}
+.clearfix:after {
+  content: ".";
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+  font-size: 0;
+  line-height: 0
+}
+.clearfix {
+  display: inline-block
+}
+.clearfix {
+  display: block
+}
+.clearboth {
+  overflow: hidden;
+  height: 1px;
+  line-height: 1;
+  font-size: 0;
+  clear: both
+}
+.icon {
+  position: relative;
+  display: inline-block;
+  background: url(http://pic.c-ctrip.com/skyseas/icon.png) no-repeat
+}
+.i43 {
+  width: 11px;
+  height: 18px;
+  background-position: -410px -44px
+}
+.i44 {
+  width: 11px;
+  height: 18px;
+  background-position: -423px -44px
+}
+.i45 {
+  width: 28px;
+  height: 16px;
+  background-position: -380px -42px
+}
+.icon_fresh {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: url(http://pic.c-ctrip.com/skyseas/loading_50.gif) no-repeat
+}
+.i_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60px;
+  height: 56px;
+  font-size: 22px;
+  font-style: normal;
+  text-align: center;
+  line-height: 56px;
+  color: #969696;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s
+}
+.i_close:hover {
+  text-shadow: 0 0 1px #000, 0 0 10px rgba(150, 150, 150, .8);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3)
+}
+.i_close:after {
+  content: '✖'
+}
+.calen_ly {
+  position: absolute;
+  width: auto;
+  box-shadow: 0 7px 5px rgba(0, 0, 0, .3)
+}
+.calen_ly .tit, .calen_ly .months {
+  height: 56px;
+  text-align: center;
+  line-height: 56px;
+  color: #fff
+}
+.calen_ly .tit {
+  font-size: 16px;
+  background-color: #4f5f6f
+}
+.calen_ly .months {
+  font-size: 18px;
+  background-color: #00438f
+}
+.calen_ly .days table {
+  width: 100%
+}
+.calen_ly .days th {
+  width: 53px;
+  height: 45px;
+  border: 1px solid #e2e2e2;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 45px;
+  background-color: #e2e2e2
+}
+.calen_ly .days td {
+  height: 52px;
+  border: 1px solid #e2e2e2;
+  font-size: 12px;
+  color: #4f5f6f;
+  background-color: #f5f8fc;
+  box-sizing: border-box;
+}
+.calen_ly .days td.go {
+  background-color: #fff
+}
+.calen_ly .days td.on span {
+  border: 1px solid #00438f;
+  background-color: #fff
+}
+.calen_ly .days td span {
+  position: relative;
+  display: block;
+  height: 100%;
+  padding-right: 8px;
+  text-align: right
+}
+.calen_ly .days td .past {
+  color: #a1b1c2
+}
+.calen_ly .days td .icon {
+  position: absolute;
+  left: 5px;
+  bottom: 5px
+}
+.calen_ly .iconwrap {
+  position: absolute;
+  top: 56px;
+  width: 54px;
+  height: 56px;
+  border: solid #01336c;
+  text-align: center;
+  line-height: 56px;
+  cursor: pointer
+}
+.calen_ly .iconwrap.left {
+  left: 0;
+  border-width: 0 1px 0 0
+}
+.calen_ly .iconwrap.right {
+  right: 0;
+  border-width: 0 0 0 1px
+}
+.calen_ly .iconwrap .icon {
+  top: 4px;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s
+}
+.calen_ly .iconwrap:hover .icon {
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3)
+}
